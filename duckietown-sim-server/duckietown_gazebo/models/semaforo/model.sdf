@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="Semaforo">
+    <static>true</static>
+    <link name="link">
+      <gravity>false</gravity>
+       <inertial>
+         <mass>0.1</mass>
+       </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://semaforo/meshes/semaforo.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	<cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://semaforo/meshes/semaforo.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
